@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>逆天佐罗斯</title>
+    <title>整合后的网页</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 粘性导航栏 -->
+    <nav class="sticky-nav">
+        <div class="nav-logo">Logo</div>
+        <div class="nav-links">
+            <a href="#">首页</a>
+            <a href="#">关于</a>
+            <a href="#">联系我们</a>
+            <a href="#">更多</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
     <!-- 文章容器部分 -->
     <div class="article-container">
         <!-- 文章头部区域 -->
         <header>
-            <h1 id="color-changing-title">标题不小心被吃了</h1>
+            <h1 id="color-changing-title">这是文章标题</h1>
             <p class="author-date">
-                <span class="author">作者：[佐罗斯]</span>
-                <span class="date">发布日期：[2024]</span>
+                <span class="author">作者：[作者名字]</span>
+                <span class="date">发布日期：[具体日期]</span>
             </p>
         </header>
         <!-- 正文区域 -->
@@ -23,6 +38,27 @@
             <p>正文段落内容，段落之间有一定的行间距。这是为了提供更好的阅读体验，文字字体为微软雅黑，大小为16px左右。</p>
             <h3>二级标题示例</h3>
             <p>另一段正文内容。</p>
+            <!-- 音频播放器 -->
+            <audio controls src="example-audio.mp3">
+                您的浏览器不支持音频标签，请更换浏览器查看。
+            </audio>
+            <!-- 模态窗口触发按钮 -->
+            <button id="openModalButton">打开模态窗口</button>
+            <!-- 模态窗口 -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div class="carousel">
+                        <div class="slides">
+                            <img src="slide1.jpg" alt="幻灯片1">
+                            <img src="slide2.jpg" alt="幻灯片2">
+                            <img src="slide3.jpg" alt="幻灯片3">
+                        </div>
+                        <button class="prev">上一页</button>
+                        <button class="next">下一页</button>
+                    </div>
+                </div>
+            </div>
             <!-- 商店功能 -->
             <div class="store">
                 <div class="product">
@@ -33,15 +69,25 @@
                 </div>
                 <!-- 可以添加更多商品 -->
             </div>
-            <!-- 音频播放器 -->
-            <audio controls src="example-audio.mp3">
-                您的浏览器不支持音频标签，请更换浏览器查看。
-            </audio>
         </section>
         <!-- 底部区域 -->
         <footer>
             <p class="copyright">版权信息：版权所有 &copy; [版权所有者]。</p>
         </footer>
+        <!-- 交互元素 -->
+        <div class="interaction-buttons">
+            <div class="share-buttons">
+                <img src="wechat-share-icon.png" alt="微信分享图标">
+                <img src="moment-share-icon.png" alt="朋友圈分享图标">
+            </div>
+            <div class="like-watch-button">
+                <img src="like-icon.png" alt="点赞图标">
+                <img src="watch-icon.png" alt="在看图标">
+            </div>
+            <div class="comment-button">
+                <img src="comment-icon.png" alt="评论图标">
+            </div>
+        </div>
     </div>
     <!-- JavaScript部分 -->
     <script src="script.js"></script>

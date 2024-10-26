@@ -3,68 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>整合后的网页</title>
+    <title>逆天佐罗斯</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 搜索框 -->
-    <div class="search-container">
-        <input type="text" placeholder="搜索...">
-        <button type="submit">搜索</button>
-    </div>
     <!-- 文章容器部分 -->
     <div class="article-container">
         <!-- 文章头部区域 -->
         <header>
-            <h1>这是文章标题</h1>
+            <h1 id="color-changing-title">标题不小心被吃了</h1>
             <p class="author-date">
-                <span class="author">作者：[作者名字]</span>
-                <span class="date">发布日期：[具体日期]</span>
+                <span class="author">作者：[佐罗斯]</span>
+                <span class="date">发布日期：[2024]</span>
             </p>
         </header>
         <!-- 正文区域 -->
         <section class="content">
-            <div class="video-container">
-                <video controls>
-                    <source src="example-video.mp4" type="video/mp4">
-                    您的浏览器不支持视频标签，请更换浏览器查看。
-                </video>
-            </div>
             <h2>一级标题示例</h2>
             <p>正文段落内容，段落之间有一定的行间距。这是为了提供更好的阅读体验，文字字体为微软雅黑，大小为16px左右。</p>
-            <img src="example-image.jpg" alt="示例图片" class="article-image">
-            <p class="image-caption">这是图片下方的简短说明文字。</p>
             <h3>二级标题示例</h3>
             <p>另一段正文内容。</p>
-            <!-- 模态窗口触发按钮 -->
-            <button id="openModalButton">打开模态窗口</button>
-            <!-- 模态窗口 -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <img src="example-image.jpg" alt="示例图片" class="modal-image">
-                    <p>这是一个模态窗口。</p>
+            <!-- 商店功能 -->
+            <div class="store">
+                <div class="product">
+                    <img src="product-image.jpg" alt="商品图片">
+                    <h4>商品名称</h4>
+                    <p>价格: ¥99.99</p>
+                    <button>购买</button>
                 </div>
+                <!-- 可以添加更多商品 -->
             </div>
+            <!-- 音频播放器 -->
+            <audio controls src="example-audio.mp3">
+                您的浏览器不支持音频标签，请更换浏览器查看。
+            </audio>
         </section>
         <!-- 底部区域 -->
         <footer>
             <p class="copyright">版权信息：版权所有 &copy; [版权所有者]。</p>
         </footer>
-        <!-- 交互元素 -->
-        <div class="interaction-buttons">
-            <div class="share-buttons">
-                <img src="wechat-share-icon.png" alt="微信分享图标">
-                <img src="moment-share-icon.png" alt="朋友圈分享图标">
-            </div>
-            <div class="like-watch-button">
-                <img src="like-icon.png" alt="点赞图标">
-                <img src="watch-icon.png" alt="在看图标">
-            </div>
-            <div class="comment-button">
-                <img src="comment-icon.png" alt="评论图标">
-            </div>
-        </div>
     </div>
     <!-- JavaScript部分 -->
     <script src="script.js"></script>

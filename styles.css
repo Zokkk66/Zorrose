@@ -1,1 +1,165 @@
-/* styles.css */ /* 整体页面布局样式 */ body { margin: 0; padding: 0; background: linear-gradient(to bottom, #f0f0f0, #dcdcdc); } /* 导航栏样式 */ header nav { display: flex; justify-content: space-around; background: linear-gradient(to right, #333, #555); /* 导航栏背景色 */ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); } header nav a { color: #fff; text-decoration: none; padding: 20px 16px; position: relative; transition: background-color 0.3s ease, color 0.3s ease; } header nav a:hover { background-color: #999; color: #000; } /* 文章容器样式 */ .article-container { width: 80%; margin: 20px auto; padding: 20px; background-color: white; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); border-radius: 5px; } /* 文章头部标题样式 */ .article-container header h1 { color: #007bff; text-align: center; font-weight: bold; margin-bottom: 10px; } /* 文章作者与日期样式 */ .article-container .author-date { text-align: center; color: #666; font-size: 14px; } /* 正文段落样式 */ .article-container .content h2 { font-size: 20px; font-weight: bold; margin-top: 20px; color: #333; } .article-container .content h3 { font-size: 18px; font-weight: bold; margin-top: 15px; color: #666; } .article-container .content p { line-height: 1.6; font-size: 16px; color: #444; } /* 图片样式 */ .article-container .article-image { max-width: 100%; display: block; margin: 10px 0; } /* 图片说明文字样式 */ .article-container .image-caption { font-size: 14px; color: #666; text-align: center; } /* 底部区域样式 */ .article-container footer { margin-top: 20px; } .article-container footer .copyright { font-size: 14px; color: #666; text-align: center; } /* 交互元素样式 */ .article-container .interaction-buttons { display: flex; justify-content: space-around; margin-top: 20px; } .article-container .share-buttons img, .article-container .like-watch-button img, .article-container .comment-button img { width: 30px; height: 30px; filter: grayscale(100%); transition: filter 0.3s ease; } .article-container .share-buttons img:hover, .article-container .like-watch-button img:hover, .article-container .comment-button img:hover { filter: grayscale(0%); } /* 响应式设计 */ @media screen and (max-width: 768px) { header nav { flex-direction: column; align-items: center; } header nav a { padding: 10px; } .article-container { width: 100%; padding: 10px; } } @media screen and (max-width: 480px) { .article-container { padding: 5px; } }
+/* styles.css */
+
+/* 整体页面布局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+}
+
+/* 导航栏样式 */
+header nav {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #333, #555); /* 导航栏背景色 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed; /* 固定导航栏在顶部 */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* 确保导航栏在最上层 */
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 16px;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #999;
+    color: #000;
+}
+
+/* 文章容器样式 */
+.article-container {
+    width: 80%;
+    margin: 80px auto 20px auto; /* 为固定导航栏留出空间 */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* 视频容器样式 */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9比例 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 文章头部标题样式 */
+.article-container header h1 {
+    color: #007bff;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 文章作者与日期样式 */
+.article-container .author-date {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* 正文段落样式 */
+.article-container .content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.article-container .content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #666;
+}
+
+.article-container .content p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #444;
+}
+
+/* 图片样式 */
+.article-container .article-image {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+/* 图片说明文字样式 */
+.article-container .image-caption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* 底部区域样式 */
+.article-container footer {
+    margin-top: 20px;
+}
+
+.article-container footer .copyright {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* 交互元素样式 */
+.article-container .interaction-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.article-container .share-buttons img,
+.article-container .like-watch-button img,
+.article-container .comment-button img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.article-container .share-buttons img:hover,
+.article-container .like-watch-button img:hover,
+.article-container .comment-button img:hover {
+    filter: grayscale(0%);
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        padding: 10px;
+    }
+
+    .article-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article-container {
+        padding: 5px;
+    }
+}

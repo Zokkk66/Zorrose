@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>逆天佐罗斯</title>
+    <title>整合后的网页</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 导航栏部分 -->
-    <header>
-        <nav>
-            <a href="#">首页</a>
-            <a href="#">关于</a>
-            <a href="#">联系我们</a>
-            <a href="#">更多</a>
-        </nav>
-    </header>
+    <!-- 搜索框 -->
+    <div class="search-container">
+        <input type="text" placeholder="搜索...">
+        <button type="submit">搜索</button>
+    </div>
     <!-- 文章容器部分 -->
     <div class="article-container">
         <!-- 文章头部区域 -->
@@ -40,6 +36,16 @@
             <p class="image-caption">这是图片下方的简短说明文字。</p>
             <h3>二级标题示例</h3>
             <p>另一段正文内容。</p>
+            <!-- 模态窗口触发按钮 -->
+            <button id="openModalButton">打开模态窗口</button>
+            <!-- 模态窗口 -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <img src="example-image.jpg" alt="示例图片" class="modal-image">
+                    <p>这是一个模态窗口。</p>
+                </div>
+            </div>
         </section>
         <!-- 底部区域 -->
         <footer>

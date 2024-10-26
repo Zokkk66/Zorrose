@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh - CN">
-
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF - 8">
-    <meta name="viewport" content="width=device - width, initial - scale = 1.0">
-    <title>整合后的网页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佐罗斯的微信</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <!-- 导航栏部分 -->
     <header>
@@ -20,11 +18,11 @@
         </nav>
     </header>
     <!-- 文章容器部分 -->
-    <div class="article - container">
+    <div class="article-container">
         <!-- 文章头部区域 -->
         <header>
             <h1>这是文章标题</h1>
-            <p class="author - date">
+            <p class="author-date">
                 <span class="author">作者：[作者名字]</span>
                 <span class="date">发布日期：[具体日期]</span>
             </p>
@@ -33,80 +31,36 @@
         <section class="content">
             <h2>一级标题示例</h2>
             <p>正文段落内容，段落之间有一定的行间距。这是为了提供更好的阅读体验，文字字体为微软雅黑，大小为16px左右。</p>
-            <video controls width="100%" height="auto" src="example - video.mp4">
-                您的浏览器不支持视频标签，请更换浏览器查看。
-            </video>
-            <p>视频下方的文字描述，可以简单介绍视频内容等。</p>
-            <img src="example - image.jpg" alt="示例图片" class="article - image">
-            <p class="image - caption">这是图片下方的简短说明文字。</p>
-            <h3>二级标题示例</p>
-            <p>另一段正文内容。</p>
-            <audio controls src="example - audio.mp3">
+            <p>音频下方的文字描述，可以简单介绍音频内容等。</p>
+            <audio controls src="example-audio.mp3">
                 您的浏览器不支持音频标签，请更换浏览器查看。
             </audio>
-            <p>音频下方的文字描述，可以简单介绍音频内容等。</p>
+            <img src="example-image.jpg" alt="示例图片" class="article-image">
+            <p class="image-caption">这是图片下方的简短说明文字。</p>
+            <h3>二级标题示例</h3>
+            <p>另一段正文内容。</p>
         </section>
         <!-- 底部区域 -->
         <footer>
             <p class="copyright">版权信息：版权所有 &copy; [版权所有者]。</p>
-            <p class="related - articles">相关文章推荐：<a href="#">文章1</a>、<a href="#">文章2</a></p>
+            <p class="related-articles">相关文章推荐：<a href="#">文章1</a>、<a href="#">文章2</a></p>
         </footer>
         <!-- 交互元素 -->
-        <div class="interaction - buttons">
-            <div class="share - buttons">
-                <img src="wechat - share - icon.png" alt="微信分享图标">
-                <img src="moment - share - icon.png" alt="朋友圈分享图标">
+        <div class="interaction-buttons">
+            <div class="share-buttons">
+                <img src="wechat-share-icon.png" alt="微信分享图标">
+                <img src="moment-share-icon.png" alt="朋友圈分享图标">
             </div>
-            <div class="like - watch - button">
-                <img src="like - icon.png" alt="点赞图标">
-                <img src="watch - icon.png" alt="在看图标">
+            <div class="like-watch-button">
+                <img src="like-icon.png" alt="点赞图标">
+                <img src="watch-icon.png" alt="在看图标">
             </div>
-            <div class="comment - button">
-                <img src="comment - icon.png" alt="评论图标">
+            <div class="comment-button">
+                <img src="comment-icon.png" alt="评论图标">
             </div>
         </div>
     </div>
-    <!-- 项目展示部分 -->
-    <main>
-        <div class="project">
-            <h2>项目1</h2>
-            <p>这是项目1的简单描述。</p>
-        </div>
-        <div class="project">
-            <h2>项目2</h2>
-            <p>这是项目2的简单描述。</p>
-        </div>
-        <h1 id="color - changing - text" class="colored - text">欢迎来到示例网页</h1>
-        <!-- 表格部分 -->
-        <table>
-            <tr>
-                <th>表头1</th>
-                <th>表头2</th>
-            </tr>
-            <tr>
-                <td>数据1</td>
-                <td>数据2</td>
-            </tr>
-            <tr>
-                <td>数据3</td>
-                <td>数据4</td>
-            </tr>
-        </table>
-    </main>
-    <!-- 插入图片 -->
-    <img src="path/to/your/image.jpg" alt="描述图片的内容">
-    <!-- JavaScript部分，这里简单示例一个点击事件改变标题颜色 -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const text = document.getElementById('color - changing - text');
-            const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
-            let index = 0;
-            setInterval(function () {
-                text.style.color = colors[index];
-                index = (index + 1) % colors.length;
-            }, 1000);
-        });
-    </script>
+    <!-- JavaScript部分 -->
+    <script src="script.js"></script>
 </body>
-
 </html>

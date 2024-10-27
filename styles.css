@@ -68,8 +68,8 @@ body {
 /* 文章头部标题样式 */
 .article-container header h1 {
     color: #007bff;
-    font-size: 20px;
-    margin-top: 15px;
+    font-size: 5px;
+    margin-top: 5px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;

@@ -76,20 +76,6 @@ body {
     width: 90vw;
 }
 
-/* 在小屏幕设备（例如宽度小于600px）上进一步调整字体大小 */
-@media screen and (max-width: 600px) {
-  .article-container header h1 {
-        font-size: 4vw;
-    }
-}
-
-/* 在大屏幕设备（例如宽度大于1200px）上调整字体大小 */
-@media screen and (min-width: 1200px) {
-  .article-container header h1 {
-        font-size: 6vw;
-    }
-}
-
 /* 文章作者与日期样式 */
 .article-container .author-date {
     text-align: center;

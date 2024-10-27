@@ -71,9 +71,6 @@ body {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
-    /* 初始字体大小为视口宽度的10% */
-    font-size: 6vw;
-    width: 30vw;
 }
 
 /* 文章作者与日期样式 */

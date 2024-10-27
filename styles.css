@@ -66,12 +66,16 @@ body {
 }
 
 /* 文章头部标题样式 */
+.article - container header {
+    display: flex;
+    justify - content: center;
+    align - items: center;
+}
 .article - container header h1 {
     color: #007bff;
-    text - align: center;
     font - weight: bold;
     margin - bottom: 10px;
-    font - size: clamp(1.5rem, 5vw, 3rem); /* 根据视口宽度自动调整字体大小，最小值为1.5rem，最大值为3rem */
+    font - size: clamp(1.5rem, 5vw, 3rem);
     white - space: nowrap;
     overflow: hidden;
     text - overflow: ellipsis;

@@ -257,7 +257,7 @@ body {
 /* 响应式设计 */
 @media screen and (max-width: 768px) {
     .article-container {
-        width: 93%;
+        width: 92%;
         padding: 10px;
     }
 }

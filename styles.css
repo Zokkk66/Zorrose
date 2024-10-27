@@ -71,8 +71,8 @@ body {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
-    /* 初始字体大小为视口宽度的5% */
-    font-size: 5vw;
+    /* 初始字体大小为视口宽度的90% */
+    font-size: 90vw;
     width: 90vw;
 }
 

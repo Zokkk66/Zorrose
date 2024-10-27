@@ -1,139 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <!-- 设置页面字符编码为UTF - 8，确保能正确显示各种字符 -->
-    <meta charset="UTF - 8">
-    <!-- 确保页面在移动设备上正确显示，宽度自适应设备宽度，初始缩放比例为1.0 -->
-    <meta name="viewport" content="width=device - width, initial - scale = 1.0">
-    <!-- 页面标题，显示在浏览器标签页上 -->
-    <title>页面布局示例</title>
-    <!-- 引入外部CSS文件，用于定义页面的样式 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逆天佐罗斯</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- 搜索框容器，用于包含搜索相关的元素 -->
-    <div class="search - container">
-        <!-- 输入框，用于用户输入搜索内容，设置了占位符提示用户 -->
+    <!-- 搜索框 -->
+    <div class="search-container">
         <input type="text" id="searchInput" placeholder="搜索...">
-        <!-- 搜索按钮，用户点击进行搜索操作 -->
         <button type="submit" id="searchButton">搜索</button>
-        <!-- 用于显示搜索反馈信息的元素，例如搜索提示或错误信息 -->
         <span id="searchFeedback"></span>
     </div>
-    <!-- 文章容器，包含文章的各个部分，如标题、正文、商店等 -->
-    <div class="article - container">
-        <!-- 文章头部区域，包含标题、作者和日期等信息 -->
+    <!-- 文章容器部分 -->
+    <div class="article-container">
+        <!-- 文章头部区域 -->
         <header>
-            <!-- 文章标题 -->
-            <h1 id="color - changing - title">标题不小心被吃掉了</h1>
-            <!-- 作者和日期信息的容器 -->
-            <p class="author - date">
-                <!-- 显示作者信息 -->
+            <h1 id="color-changing-title">标题不小心被吃掉了</h1>
+            <p class="author-date">
                 <span class="author">作者：[佐罗斯]</span>
-                <!-- 显示发布日期信息 -->
                 <span class="date">发布日期：[无]</span>
             </p>
         </header>
-        <!-- 正文区域，包含视频、标题、正文段落、音频和商店等内容 -->
+        <!-- 正文区域 -->
         <section class="content">
-            <!-- 视频容器，用于展示视频内容 -->
-            <div class="video - container">
-                <!-- 视频元素，设置了controls属性以便用户控制视频播放 -->
+            <div class="video-container">
                 <video controls>
-                    <!-- 视频源文件，指定了视频的格式为mp4 -->
-                    <source src="example - video.mp4" type="video/mp4">
-                    <!-- 如果浏览器不支持视频标签，显示的提示信息 -->
+                    <source src="example-video.mp4" type="video/mp4">
                     您的浏览器不支持视频标签，请更换浏览器查看。
                 </video>
             </div>
-            <!-- 一级标题，用于划分文章的主要部分 -->
             <h2>一级标题</h2>
-            <!-- 正文段落，提供文章的主要内容 -->
             <p>正文段落内容，段落之间有一定的行间距。这是为了提供更好的阅读体验，文字字体为微软雅黑，大小为16px左右。</p>
-            <!-- 二级标题，进一步细分文章内容 -->
             <h3>二级标题</h3>
-            <!-- 这部分正文内容现在可调整位置 -->
-            <p>这里是可调整位置的正文内容。</p>
-            <!-- 音频播放器，位于二级标题下方的正文内容之后，商品图片上方 -->
-            <audio controls src="example - audio.mp3">
-                <!-- 如果浏览器不支持音频标签，显示的提示信息 -->
-                您的浏览器不支持音频标签，请更换浏览器查看。
-            </audio>
-            <!-- 商店功能区域，包含商品信息 -->
+            <p>另一段正文内容。</p>
+            <!-- 商店功能 -->
             <div class="store">
-                <!-- 单个商品的容器 -->
                 <div class="product">
-                    <!-- 商品图片，设置了alt属性用于图片无法加载时的替代文本 -->
-                    <img src="product - image.jpg" alt="商品图片">
-                    <!-- 商品名称标题 -->
+                    <img src="product-image.jpg" alt="商品图片">
                     <h4>商品名称</h4>
-                    <!-- 商品价格信息 -->
                     <p>价格: ¥99.99</p>
-                    <!-- 查看更多商品信息的按钮 -->
-                    <button class="buy - button">查看更多</button>
+                    <button class="buy-button">查看更多</button>
                 </div>
                 <!-- 可以添加更多商品 -->
             </div>
+            <!-- 音频播放器 -->
+            <audio controls src="example-audio.mp3">
+                您的浏览器不支持音频标签，请更换浏览器查看。
+            </audio>
         </section>
-        <!-- 页面底部区域，通常用于显示版权信息等 -->
+        <!-- 底部区域 -->
         <footer>
-            <!-- 版权信息段落 -->
             <p class="copyright">版权信息：版权所有 &copy; [版权所有者]。</p>
         </footer>
-        <!-- 交互元素容器，包含分享、点赞、评论等按钮 -->
-        <div class="interaction - buttons">
-            <!-- 分享按钮容器 -->
-            <div class="share - buttons">
-                <!-- 微信分享图标 -->
-                <img src="wechat - share - icon.png" alt="微信分享图标">
-                <!-- 朋友圈分享图标 -->
-                <img src="moment - share - icon.png" alt="朋友圈分享图标">
+        <!-- 交互元素 -->
+        <div class="interaction-buttons">
+            <div class="share-buttons">
+                <img src="wechat-share-icon.png" alt="微信分享图标">
+                <img src="moment-share-icon.png" alt="朋友圈分享图标">
             </div>
-            <!-- 点赞和在看按钮容器 -->
-            <div class="like - watch - button">
-                <!-- 点赞图标 -->
-                <img src="like - icon.png" alt="点赞图标">
-                <!-- 在看图标 -->
-                <img src="watch - icon.png" alt="在看图标">
+            <div class="like-watch-button">
+                <img src="like-icon.png" alt="点赞图标">
+                <img src="watch-icon.png" alt="在看图标">
             </div>
-            <!-- 评论按钮容器 -->
-            <div class="comment - button">
-                <!-- 评论图标 -->
-                <img src="comment - icon.png" alt="评论图标">
+            <div class="comment-button">
+                <img src="comment-icon.png" alt="评论图标">
             </div>
         </div>
     </div>
-    <!-- 模态窗口，用于显示一些弹出内容，如图片轮播等 -->
+    <!-- 模态窗口 -->
     <div id="modal" class="modal">
-        <div class="modal - content">
-            <!-- 关闭按钮，用于关闭模态窗口 -->
-            <span class="close - button">&times;</span>
-            <!-- 轮播图容器 -->
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
             <div class="carousel">
-                <!-- 单个轮播图项 -->
-                <div class="carousel - item">
-                    <!-- 轮播图图片，设置了alt属性用于图片无法加载时的替代文本 -->
-                    <img src="product - image1.jpg" alt="商品图片1">
-                    <!-- 轮播图图片的描述文字 -->
+                <!-- 轮播图内容 -->
+                <div class="carousel-item">
+                    <img src="product-image1.jpg" alt="商品图片1">
                     <p>昙花若只一现 更要开的耀眼。</p>
                 </div>
-                <div class="carousel - item">
-                    <img src="product - image2.jpg" alt="商品图片2">
+                <div class="carousel-item">
+                    <img src="product-image2.jpg" alt="商品图片2">
                     <p>昙花若只一现 更要开的耀眼</p>
                 </div>
-                <div class="carousel - item">
-                    <img src="product - image3.jpg" alt="商品图片3">
+                <div class="carousel-item">
+                    <img src="product-image3.jpg" alt="商品图片3">
                     <p>昙花若只一现 更要开的耀眼</p>
                 </div>
                 <!-- 可以添加更多轮播图项 -->
             </div>
-            <!-- 轮播图导航按钮，用于切换轮播图 -->
-            <button class="carousel - button prev">&lt;</button>
-            <button class="carousel - button next">&gt;</button>
+            <!-- 轮播图导航按钮 -->
+            <button class="carousel-button prev">&lt;</button>
+            <button class="carousel-button next">&gt;</button>
         </div>
     </div>
+    <!-- JavaScript部分 -->
+    <script src="script.js"></script>
 </body>
-
 </html>
